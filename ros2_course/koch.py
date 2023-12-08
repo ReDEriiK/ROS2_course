@@ -116,31 +116,6 @@ class koch_snow(Node):
         self.twist_pub.publish(vel_msg)
         #self.get_logger().info('Arrived to destination.')
 
-
-
-    def koch_subfunc(self, speed, omega, I, L, P, help):
-        print(P)
-        self.go_straight(speed, L)
-        P=P-60
-        self.turn(omega, P)
-        print(P)
-        self.go_straight(speed, L)
-        P=P+180
-        self.turn(omega, P)
-        print(P)
-        self.go_straight(speed, L)
-        P=P-180
-        self.turn(omega, P)
-        print(P)
-        self.go_straight(speed, L)
-        print(help)
-        if help==0:
-            self.turn(omega, P)
-            self.help=1
-        else:
-            P=P+180
-            self.turn(omega, P)
-            self.help=0
     def set_spawnpoint(self, speed, omega, x, y):
         self.set_pen(0, 0, 0, 0, 1)
         # Wait for position to be received
