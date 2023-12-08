@@ -19,8 +19,6 @@ koch.py is a script that makes a koch snowflake.
     Calculate Angle and Distance to Target Point
     Execute Movement
     Set the pen attributes
-  koch_subfunc:
-    Is a subfunction
   draw_koch:
     Is a recursive function
     The parameters: speed, omega, counter, distance
